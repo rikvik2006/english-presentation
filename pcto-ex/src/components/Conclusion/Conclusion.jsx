@@ -1,3 +1,5 @@
+import styles from './Conclusion.module.scss'
+
 const Conclusion = () => {
     return(
         <div>
@@ -5,3 +7,5 @@ const Conclusion = () => {
         </div>
     )
 }
+
+export default Conclusion

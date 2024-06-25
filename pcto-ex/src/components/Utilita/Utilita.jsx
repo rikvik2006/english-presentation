@@ -1,3 +1,5 @@
+import styles from './Utilita.module.scss'
+
 const Utilita = () => {
     return(
         <div>
@@ -5,3 +7,5 @@ const Utilita = () => {
         </div>
     )
 }
+
+export default Utilita

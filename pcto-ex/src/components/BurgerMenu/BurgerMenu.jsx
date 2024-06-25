@@ -1,3 +1,5 @@
+import styles from './BurgerMenu.module.scss'
+
 const BurgerMenu = () => {
     return(
         <div>
@@ -5,3 +7,5 @@ const BurgerMenu = () => {
         </div>
     )
 }
+
+export default BurgerMenu
