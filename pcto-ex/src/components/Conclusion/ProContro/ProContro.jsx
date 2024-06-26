@@ -7,20 +7,24 @@ import { contro } from '../../../utils/contro.js'
 const ProContro = () => {
     return(
         <div className={styles.content}>
-            <div className={styles.proWrapper}>
-                {
-                    pro.map((pro, index) => (
-                        <ProLabel key={index} title={pro.title}/>
-                    ))
-                }
-            </div>
+            <div className={styles.contentWrapper}>
+                <div className={styles.pro}>
+                    <div className={styles.title}>Pro</div>
+                    {
+                        pro.map((pro, index) => (
+                            <ProLabel key={index} title={pro.title}/>
+                            ))
+                        }
+                </div>
 
-            <div className={styles.controWrapper}>
-                {
-                    contro.map((contro, index) => (
-                        <ControLabel key={index} title={contro.title}/>
-                    ))
-                }
+                <div className={styles.contro}>
+                    <div className={styles.title}>Contro</div>
+                    {
+                        contro.map((contro, index) => (
+                            <ControLabel key={index} title={contro.title}/>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

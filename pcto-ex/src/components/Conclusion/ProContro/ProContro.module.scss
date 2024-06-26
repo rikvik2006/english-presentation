@@ -1,6 +1,20 @@
 .content {
-    height: 40vw;
+    height: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    .contentWrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 20vw;
+
+    }
+
+    .title {
+        color: var(--primary-white);
+        font-size: 3vw;
+        font-weight: 700;
+        margin-bottom: 3vw;
+    }
 }

@@ -2,8 +2,10 @@ import styles from './Label.module.scss'
 
 const Label = ({title}) => {
     return(
-        <div className={styles.title}>
-            {title}
+        <div className={styles.titleLine}>
+            <div className={styles.title}>
+                {title}
+            </div>
         </div>
     )
 }
