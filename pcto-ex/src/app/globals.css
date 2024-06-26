@@ -8,5 +8,8 @@
 }
 
 body {
+    margin: 2.3vw 3vw 0 3vw;
+    box-sizing: border-box;
+    background-color: var(--primary-black);
     font-family: "Montserrat", sans-serif;
 }

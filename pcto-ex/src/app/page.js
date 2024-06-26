@@ -1,9 +1,10 @@
-import Slides from "@/components/Slides/Slides";
+import Conclusion from "@/components/Conclusion/Conclusion";
+
 
 export default function Home() {
   return (
     <div>
-      <Slides/>
+      <Conclusion/>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.content {
+   height: 46vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+   .text {
+      color: var(--primary-white);
+      max-width: 30vw;
+      text-align: center;
+      font-weight: 400;
+   }
+}
