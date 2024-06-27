@@ -1,17 +1,17 @@
 export const pro = [
     {
-        title: "prova1"
+        title: "vera esperienza"
     },
     {
-        title: "prova2"
+        title: "conoscenze tecniche"
     },
     {
-        title: "prova3"
+        title: "ambiente"
     },
     {
-        title: "prova4"
+        title: "responsabilità"
     },
     {
-        title: "prova5"
+        title: "paga"
     },
 ]

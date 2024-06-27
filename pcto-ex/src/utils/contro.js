@@ -1,11 +1,17 @@
 export const contro = [
     {
-        title: "prova1"
+        title: "-  -  -  ( x )  -  -  -"
     },
     {
-        title: "prova2"
+        title: "-  -  -  ( x )  -  -  -"
     },
     {
-        title: "prova3"
+        title: "-  -  -  ( x )  -  -  -"
+    },
+    {
+        title: "-  -  -  ( x )  -  -  -"
+    },
+    {
+        title: "-  -  -  ( x )  -  -  -"
     },
 ]
