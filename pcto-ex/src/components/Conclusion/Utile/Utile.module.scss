@@ -1,0 +1,13 @@
+.titleContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title{
+        color: var( --primary-white);
+        font-size: 18vw;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}
