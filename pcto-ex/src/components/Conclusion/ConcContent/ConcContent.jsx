@@ -4,9 +4,10 @@ const ConcContent = () => {
     return(
         <div className={styles.content}>
             <div className={styles.text}>
-                Esistono innumerevoli variazioni dei passaggi del Lorem Ipsum, ma la maggior parte hanno subito delle 
-                variazioni del tempo, a causa dell’inserimento di passaggi ironici, o di sequenze casuali di caratteri 
-                palesemente poco verosimili. 
+                Sono contento di questa esperienza. Anche se ho fatto solo lavori di base, 
+                erano comunque lavori veri e non semplici progettini che poi nessuno considera. 
+                L'ambiente era fantastico: tutti scherzavano ed erano gentili, ma lavoravano anche duramente, 
+                creando un clima davvero piacevole.
             </div>
         </div>
     )
