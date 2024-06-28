@@ -9,6 +9,9 @@
         align-items: flex-start;
         gap: 20vw;
 
+        .labelContent {
+            position: relative;
+        }
     }
 
     .title {

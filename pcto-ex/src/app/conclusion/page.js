@@ -1,6 +1,6 @@
 'use client'
 
-import Conclusion from "@/components/Conclusion/Conclusion";
+import Conclusion from "../../components/Conclusion/Conclusion.jsx";
 import { useEffect } from "react";
 
 export default function Page() {

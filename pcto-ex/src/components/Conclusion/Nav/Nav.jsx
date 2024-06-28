@@ -6,8 +6,6 @@ const Nav = () => {
             <div className={styles.title}>
                 conclusioni
             </div>
-
-            <div className={styles.burgerMenu}></div>
         </div>
     )
 }

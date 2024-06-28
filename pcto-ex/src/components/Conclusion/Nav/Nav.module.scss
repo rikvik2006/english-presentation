@@ -2,7 +2,6 @@
     font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
 
     .title{
         color: var( --primary-white);
@@ -10,11 +9,5 @@
         font-weight: 800;
         font-size: 8.5vw;
         line-height: 6.5vw;
-    }
-
-    .burgerMenu {
-        height: 1.3vw;
-        width: 4vw;
-        background-color: red ;
     }
 } 

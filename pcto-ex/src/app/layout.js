@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
+import BurgerMenu from "../components/BurgerMenu/BurgerMenu.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 

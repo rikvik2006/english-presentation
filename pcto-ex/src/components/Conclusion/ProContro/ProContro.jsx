@@ -10,11 +10,13 @@ const ProContro = () => {
             <div className={styles.contentWrapper}>
                 <div className={styles.pro}>
                     <div className={styles.title}>Pro</div>
-                    {
-                        pro.map((pro, index) => (
-                            <ProLabel key={index} title={pro.title}/>
-                            ))
+                    <div className={styles.labelContent}>
+                        {
+                            pro.map((pro, index) => (
+                                <ProLabel key={index} title={pro.title}/>
+                                ))
                         }
+                    </div>
                 </div>
 
                 <div className={styles.contro}>

@@ -1,12 +1,33 @@
-.titleLine {
-    border-top: 1px solid var(--primary-white);
-    display: flex;
-    align-items: center;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+.content {
     width: 25vw;
     
-    .title {
-        color: var(--primary-white); 
+    .banner {
+        position: fixed;
+        top: 0;
+        background-color: var(--secondary-yellow);
+        height: 3.5vw;
+        z-index: -10;
     }
+
+    .lineTitle {
+        border-top: 1px solid var(--primary-white);
+
+        .title {
+            line-height: 3.5vw;
+            color: var(--primary-white); 
+            transition: all 0.2s;
+    
+        }  
+        
+        .title:hover{
+            color: var(--primary-black);
+        }
+        
+        .title:hover{
+            transform: translateX(1vw);
+        }
+    }
+    
 }
+    
+

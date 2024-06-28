@@ -7,7 +7,7 @@ import Link from 'next/link'
 const link = [
     { path: "/intro1", label: "INTRO" },
     { path: "/cono&cons1", label: "CONO. & CONS." },
-    { path: "/conclusioni1", label: "CONCLUSIONI" },
+    { path: "/conclusioni", label: "CONCLUSIONI" },
 ]
 
 const BurgerMenu = () => {

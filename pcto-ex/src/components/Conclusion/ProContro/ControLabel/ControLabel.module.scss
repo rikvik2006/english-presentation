@@ -2,11 +2,22 @@
     border-top: 1px solid var(--primary-white);
     display: flex;
     align-items: center;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+
     width: 25vw;
     
     .title {
+        width: 25vw;
+        line-height: 3.5vw;
         color: var(--primary-white); 
+        transition: all 0.2s;
+    }    
+    
+    .title:hover{
+        color: var(--primary-white);
+    
+    }
+ 
+    .title:hover{
+        transform: translateX(1vw);
     }
 }
