@@ -1,13 +1,14 @@
 .content {
-   height: 46vw;
+   height: 86vh;
    display: flex;
    justify-content: center;
    align-items: center;
 
 
    .text {
-      color: var(--primary-white);
       max-width: 33vw;
+      font-size: 1vw;
+      color: var(--primary-white);
       text-align: center;
       font-weight: 400;
    }
