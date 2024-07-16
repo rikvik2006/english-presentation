@@ -19,15 +19,19 @@ const Label = ({title}) => {
     }
 
     return(
-        <div className={styles.content}>
-            <div id='banner' className={styles.banner}></div>
-
-            <div className={styles.lineTitle}>
-                <div onMouseEnter={enterAnimation()} className={styles.title}>
+        <>
+            <div className={styles.line}></div>
+            <div className={styles.content}>
+                <div className={styles.title}>
                     {title}
                 </div>
+
+                <div className={styles.backGround}>
+
+                </div>
             </div>
-        </div>
+
+        </>
     )
 }
 
