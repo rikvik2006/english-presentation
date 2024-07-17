@@ -21,11 +21,13 @@ const ProContro = () => {
 
                 <div className={styles.contro}>
                     <div className={styles.title}>Contro</div>
-                    {
-                        contro.map((contro, index) => (
-                            <ControLabel key={index} title={contro.title}/>
-                        ))
-                    }
+                    <div className={styles.labelContent}>
+                        {
+                            contro.map((contro, index) => (
+                                <ControLabel key={index} title={contro.title}/>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>

@@ -22,13 +22,9 @@ const Label = ({title}) => {
         <>
             <div className={styles.line}></div>
             <div className={styles.content}>
-                <div className={styles.title}>
-                    {title}
-                </div>
+                <p>{title}</p>
 
-                <div className={styles.backGround}>
-
-                </div>
+                <div className={styles.backGround}></div>
             </div>
 
         </>
