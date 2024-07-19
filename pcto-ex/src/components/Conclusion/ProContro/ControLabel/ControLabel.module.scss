@@ -1,23 +1,21 @@
-.titleLine {
-    border-top: 1px solid var(--primary-white);
-    display: flex;
-    align-items: center;
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-white);
+}
 
-    width: 25vw;
+.content {
+    width: 100%;
+    color: var(--primary-white);
+    overflow: hidden;
     
-    .title {
-        width: 25vw;
-        line-height: 3.5vw;
-        color: var(--primary-white); 
+    p {
+        margin: 0;
+        padding: 1vw 0 1vw 0;
         transition: all 0.2s;
-    }    
-    
-    .title:hover{
-        color: var(--primary-white);
-    
     }
- 
-    .title:hover{
+
+    p:hover {
         transform: translateX(1vw);
     }
 }

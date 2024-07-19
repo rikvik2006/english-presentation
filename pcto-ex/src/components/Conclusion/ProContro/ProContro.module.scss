@@ -26,6 +26,23 @@
             }
         }
 
+        .contro {
+            width: 25vw;
+
+            .title {
+                color: var(--primary-white);
+                font-size: 3vw;
+                font-weight: 700;
+                margin-bottom: 3vw;
+            }
+
+            .labelContent {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
     }
 
 }
