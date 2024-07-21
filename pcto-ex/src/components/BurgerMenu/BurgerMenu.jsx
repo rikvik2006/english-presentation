@@ -20,7 +20,27 @@ const BurgerMenu = () => {
 
     return(
         <div className={styles.menuContainer} ref={container}>
-           
+           <div className={styles.menuOpen} onClick={toggleMenu}>
+                <p>open</p>
+           </div>
+
+           <div className={styles.menuOverlay}>
+                <div className={styles.menuClose}>
+                    <p>close</p>
+                </div>
+
+                <div className={styles.menuLinks}>
+                    {link.map((link, index) => (
+                        <div className={styles.menuLinksItem} key={index}>
+                            <div className={styles.menuLinksItemHolder} onClick={toggleMenu} >
+                                <Link href={link.path} className={styles.menuLink}>
+                                    {link.label}
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+           </div>
         </div>
     )
 }
