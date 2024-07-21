@@ -1,8 +1,50 @@
-.menuContainer {
-    position: absolute;
-    top: 3vw;
-    right: 3.5vw;
-    height: 1.3vw;
-    width: 4vw;
-    background-color: red;
+.button{
+    position: fixed;
+    right: 0px;
+    margin: 1vw;
+    z-index: 2;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: var(--primary-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger{
+    width: 100%;
+    &::after, &::before{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 50%;
+        margin: auto;
+        background-color: var(--primary-black);
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    &::after{
+        top: -5px;
+    }
+
+    &::before{
+        top: 5px;
+    }
+}
+
+.burgerActive{
+
+    &::after{
+        transform: rotate(45deg);
+        top: -1px;
+    }
+
+    &::before{
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    
 }
