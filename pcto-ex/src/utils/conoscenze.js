@@ -1,4 +1,4 @@
-export const cono = [
+export const conoscenze = [
     {
         id: "lavoro",
         numero: "01.",
@@ -19,4 +19,4 @@ export const cono = [
         numero: "04.",
         titolo: "ELETTRONICA"
     },
-]   
+]
