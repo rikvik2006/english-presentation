@@ -1,10 +1,31 @@
-.title {
+.contentWraper {
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    align-items: flex-start;
-    color: var( --primary-white);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 8.5vw;
-    line-height: 6.5vw;
-} 
+    height: 100vh;
+
+    .prova {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .numero {
+            color: var( --primary-white);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 8.5vw;
+            width: 15vw;
+        }
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .title {
+            color: var( --primary-white);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 7.5vw;
+        }
+    } 
+}

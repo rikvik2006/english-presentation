@@ -19,10 +19,18 @@ export default function Page({ params }) {
 
 
     return (
-        <>
-            <div className={styles.title}>
-                {conoscenza?.numero}
+        <div className={styles.contentWraper}>
+            <div className={styles.prova}>
+                <div className={styles.numero}>
+                    {conoscenza?.numero}
+                </div>
             </div>
-        </>
+
+            <div className={styles.content}>
+                <div className={styles.title}> 
+                    {conoscenza?.titolo}    
+                </div>
+            </div>
+        </div>
     )
 }
