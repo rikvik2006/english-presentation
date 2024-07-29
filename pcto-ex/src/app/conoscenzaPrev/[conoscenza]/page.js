@@ -1,8 +1,7 @@
 'use client'
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
-import { conoscenze } from '../../utils/conoscenze.js'
-import { notFound } from 'next/navigation'
+import { conoscenze } from '../../../utils/conoscenze.js'
 
 export default function Page({ params }) {
     const [ conoscenza, setConoscenza] = useState(null)
