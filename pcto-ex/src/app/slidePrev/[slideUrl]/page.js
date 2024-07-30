@@ -20,10 +20,11 @@ export default function Page({ params }) {
     return (
         <div className={styles.pageContent}>
             <div className={styles.numero}>
-
+                {slideUrl?.numero}
             </div>
 
             <div className={styles.intro}>
+                {slideUrl?.intro}
 
             </div>
 

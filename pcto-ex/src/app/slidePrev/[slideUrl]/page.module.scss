@@ -1,3 +1,22 @@
-.prova{
-    color: white;
+.pageContent {
+    height: 100vh;
+
+    .numero {
+        width: 25vw;
+        color: var( --primary-white);
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 8vw;
+    }
+
+    .intro {
+        position: absolute;
+        top: 4vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: .65vw;
+        
+
+    }
 }
