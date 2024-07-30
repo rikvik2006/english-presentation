@@ -17,7 +17,41 @@ export default function Page({ params }) {
     }, [])
 
 
-    return <div className={styles.prova}>{slideUrl?.numero}</div>
-       
-    
+    return (
+        <div className={styles.pageContent}>
+            <div className={styles.numero}>
+
+            </div>
+
+            <div className={styles.intro}>
+
+            </div>
+
+            <div className={styles.mainContent}>
+                <div className={styles.text}>
+
+                </div>
+
+                <div className={styles.img}>
+
+                </div>
+            </div>
+
+            <div className={styles.footer}>
+                <div className={styles.settimana}>
+
+                </div>
+
+                <div className={styles.data}>
+
+                </div>
+
+
+                <div className={styles.topic}>
+
+                </div>
+
+            </div>
+        </div>
+    );
 }
