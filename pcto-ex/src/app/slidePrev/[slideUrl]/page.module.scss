@@ -1,12 +1,21 @@
 .pageContent {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    .numeroWrapper {
+        display: flex;
+        align-items: flex-start;
 
-    .numero {
-        width: 25vw;
-        color: var( --primary-white);
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 8vw;
+        .numero {
+            width: 25vw;
+            color: var( --primary-white);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 8vw;
+        }
     }
 
     .intro {
@@ -16,7 +25,34 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: .65vw;
-        
+    }
 
+    .mainContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .text {
+            color: white;
+        }
+    }
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+
+       .settimana {
+
+       } 
+
+       .data {
+
+       }
+
+       .topic {
+
+       }
     }
 }
