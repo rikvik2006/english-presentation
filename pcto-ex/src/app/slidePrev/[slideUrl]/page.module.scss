@@ -1,10 +1,8 @@
 .pageContent {
-    height: 100vh;
+    height: calc(100vh - 2.3vw);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    
+
     .numeroWrapper {
         display: flex;
         align-items: flex-start;
@@ -39,7 +37,7 @@
     
     .footer {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         color: white;
 
