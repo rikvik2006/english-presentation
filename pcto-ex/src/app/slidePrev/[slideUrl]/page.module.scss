@@ -38,6 +38,8 @@
         
         .text {
             color: white;
+            font-size: .7vw;
+            font-weight: 300;
             max-width: 20vw;
         }
         
@@ -49,6 +51,7 @@
     }
     
     .footer {
+        font-size: .7vw;
         width: calc(100vw - 6vw);
         display: flex;
         align-items: flex-end;
