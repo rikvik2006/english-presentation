@@ -17,7 +17,8 @@ const slidesData = [
         img: "a",
         settimana: "settimana 1",
         data: "18 / 06 / 2024",
-        topic: "configurazione plc"
+        topic: "configurazione plc",
+        //link: "/slidePrev/primoGiorno"
     },
     {
         id: "configurazionePc",
@@ -27,7 +28,8 @@ const slidesData = [
         img: "a",
         settimana: "settimana 1",
         data: "19-20 / 06 / 2024",
-        topic: "configurazione pc"
+        topic: "configurazione pc",
+        //link: "/slidePrev/noia"
     },
     {
         id: "noia",
@@ -37,7 +39,8 @@ const slidesData = [
         img: "a",
         settimana: "settimana 1",
         data: "21 / 06 / 2024",
-        topic: "configurazione pc"
+        topic: "configurazione pc",
+        //link: "/slidePrev/miniCorso"
     },
     {
         id: "miniCorso",
@@ -47,7 +50,8 @@ const slidesData = [
         img: "a",
         settimana: "settimana 2",
         data: "24 / 06 / 2024",
-        topic: "pc/saldatura"
+        topic: "pc/saldatura",
+        //link: "/slidePrev/ultimiGiorni"
     },
     {
         id: "ultimiGiorni",
@@ -57,7 +61,7 @@ const slidesData = [
         img: "a",
         settimana: "settimana 2",
         data: "25-27 / 06 / 2024",
-        topic: "piccole task"
+        topic: "piccole task",
     },
 ]
 

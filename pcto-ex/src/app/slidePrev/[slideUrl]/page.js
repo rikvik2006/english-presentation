@@ -2,6 +2,7 @@
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import slideData  from '../../../utils/slidesData'
+import Link from 'next/link'
 
 export default function Page({ params }) {
     const [ slideUrl, setSlideUrl] = useState(null)
@@ -34,9 +35,11 @@ export default function Page({ params }) {
                     <p>{slideUrl?.content}</p>
                 </div>
 
-                <div className={styles.img}>
-                    
-                </div>
+                <Link href={slideUrl?.link}>
+                    <div className={styles.img}>
+                        
+                    </div>
+                </Link>
             </div>
 
             <div className={styles.footer}>
