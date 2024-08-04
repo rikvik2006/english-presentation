@@ -2,6 +2,7 @@
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { conoscenze } from '../../../utils/conoscenze.js'
+import Link from 'next/link'
 
 export default function Page({ params }) {
     const [ conoscenza, setConoscenza] = useState(null)
@@ -26,9 +27,11 @@ export default function Page({ params }) {
             </div>
 
             <div className={styles.content}>
-                <div className={styles.title}> 
-                    {conoscenza?.titolo}    
-                </div>
+                <Link href={`${conoscenza?.link}`}>
+                    <div className={styles.title}> 
+                        {conoscenza?.titolo}    
+                    </div>
+                </Link>
             </div>
         </div>
     )
