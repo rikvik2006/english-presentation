@@ -35,10 +35,8 @@ export default function Page({ params }) {
                     <p>{slideUrl?.content}</p>
                 </div>
 
-                <Link href={slideUrl?.link}>
-                    <div className={styles.img}>
-                        
-                    </div>
+                <Link href={`${slideUrl?.link}`}>
+                    <div className={styles.img}></div>
                 </Link>
             </div>
 
