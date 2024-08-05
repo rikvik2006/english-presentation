@@ -33,10 +33,10 @@
 
     .nextLink {
         position: absolute;
-        background-color: var(--primary-black);
-        bottom: 0;
         right: 0;
+        bottom: 25%;
+        height: 50vh; 
         width: 10vw;
-        height: 50vh;
+        background-color: var(--primary-black);
     }
 }

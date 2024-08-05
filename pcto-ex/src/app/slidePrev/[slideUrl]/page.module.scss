@@ -61,10 +61,10 @@
 
     .nextLink {
         position: absolute;
-        background-color: var(--primary-black);
-        bottom: 25%;
         right: 0;
-        width: 10vw;
+        bottom: 25%;
         height: 50vh; 
+        width: 10vw;
+        background-color: var(--primary-black);
     }
 }
