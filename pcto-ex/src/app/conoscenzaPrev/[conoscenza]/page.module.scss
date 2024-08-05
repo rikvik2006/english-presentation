@@ -1,12 +1,12 @@
 .contentWraper {
     font-family: "Montserrat", sans-serif;
     height: calc(100vh - 2.3vw);
-
+    
     .prova {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-
+        
         .numero {
             color: var( --primary-white);
             text-transform: uppercase;
@@ -22,7 +22,6 @@
         transform: translate(-50%, -50%);    
         
         .title {
-            text-decoration: none;
             color: var( --primary-white);
             text-transform: uppercase;
             font-weight: 800;
@@ -31,4 +30,13 @@
             text-align: center;
         }
     } 
+
+    .nextLink {
+        position: absolute;
+        background-color: var(--primary-black);
+        bottom: 0;
+        right: 0;
+        width: 10vw;
+        height: 50vh;
+    }
 }

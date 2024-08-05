@@ -27,12 +27,14 @@ export default function Page({ params }) {
             </div>
 
             <div className={styles.content}>
-                <Link href={`${conoscenza?.link}`}>
                     <div className={styles.title}> 
-                        {conoscenza?.titolo}    
+                        {conoscenza?.titolo}
                     </div>
-                </Link>
             </div>
+
+            <Link href={`${conoscenza?.link}`}>
+                <div className={styles.nextLink}></div>
+            </Link>
         </div>
     )
 }
