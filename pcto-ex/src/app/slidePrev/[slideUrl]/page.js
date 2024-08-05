@@ -35,11 +35,15 @@ export default function Page({ params }) {
                     <p>{slideUrl?.content}</p>
                 </div>
 
-                <Link href={`${slideUrl?.link}`}>
-                    <div className={styles.img}></div>
-                </Link>
+                
+                <div className={styles.img}></div>
+
             </div>
 
+            <Link href={`${slideUrl?.link}`}>
+                <div className={styles.nextLink}></div>
+            </Link>
+            
             <div className={styles.footer}>
                 <div className={styles.settimana}>
                     <p>{slideUrl?.settimana}</p>
@@ -52,8 +56,8 @@ export default function Page({ params }) {
                 <div className={styles.topic}>
                     <p>{slideUrl?.topic}</p>
                 </div>
-
             </div>
+
         </div>
     );
 }

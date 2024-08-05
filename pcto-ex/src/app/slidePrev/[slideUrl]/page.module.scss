@@ -58,4 +58,13 @@
         justify-content: space-between;
         color: white;
     }
+
+    .nextLink {
+        position: absolute;
+        background-color: var(--primary-black);
+        bottom: 25%;
+        right: 0;
+        width: 10vw;
+        height: 50vh; 
+    }
 }
