@@ -36,7 +36,9 @@ export default function Page({ params }) {
                 </div>
 
                 
-                <div className={styles.img}></div>
+                <div className={styles.img}>
+                    <img src={`${slideUrl?.img}`} alt='boboz'/>
+                </div>
 
             </div>
 

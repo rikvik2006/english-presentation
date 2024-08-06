@@ -43,10 +43,10 @@
             max-width: 20vw;
         }
         
-        .img {
+        img {
             height: 20vw;
             width: 12vw;
-            background-color: red;
+            filter: brightness(70%);
         }
     }
     
