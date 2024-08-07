@@ -42,8 +42,12 @@ export default function Page({ params }) {
 
             </div>
 
-            <Link href={`${slideUrl?.link}`}>
+            <Link href={`${slideUrl?.linkNext}`}>
                 <div className={styles.nextLink}></div>
+            </Link>
+
+            <Link href={`${slideUrl?.linkPrev}`}>
+                <div className={styles.linkPrev}></div>
             </Link>
             
             <div className={styles.footer}>
