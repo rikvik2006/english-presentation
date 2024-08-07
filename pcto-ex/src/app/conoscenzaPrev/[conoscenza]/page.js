@@ -32,8 +32,12 @@ export default function Page({ params }) {
                     </div>
             </div>
 
-            <Link href={`${conoscenza?.link}`}>
+            <Link href={`${conoscenza?.linkNext}`}>
                 <div className={styles.nextLink}></div>
+            </Link>
+
+            <Link href={`${conoscenza?.linkPrev}`}>
+                <div className={styles.linkPrev}></div>
             </Link>
         </div>
     )

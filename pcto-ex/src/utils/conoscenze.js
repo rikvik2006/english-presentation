@@ -3,24 +3,28 @@ export const conoscenze = [
         id: "lavoro",
         numero: "01.",
         titolo: "COSA E' IL LAVORO",
-        link: "/conoscenzaPrev/tecniche"
+        linkNext: "/conoscenzaPrev/tecniche",
+        linkPrev: "/conoscenzaPrev/elettronica"
     },
     {
         id: "tecniche",
         numero: "02.",
         titolo: "CONOSCENZE TECNICHE",
-        link: "/conoscenzaPrev/linux"
+        linkNext: "/conoscenzaPrev/linux",
+        linkPrev: "/conoscenzaPrev/lavoro"
     },
     {
         id: "linux",
         numero: "03.",
         titolo: "LINUX",
-        link: "/conoscenzaPrev/elettronica"
+        linkNext: "/conoscenzaPrev/elettronica",
+        linkPrev: "/conoscenzaPrev/tecniche"
     },
     {
         id: "elettronica",
         numero: "04.",
         titolo: "ELETTRONICA",
-        link: "/conoscenzaPrev/lavoro"
+        linkNext: "/conoscenzaPrev/lavoro",
+        linkPrev: "/conoscenzaPrev/linux"
     },
 ]
