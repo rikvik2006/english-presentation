@@ -15,7 +15,7 @@ const slidesData = [
         id: "primoGiorno",
         numero: "01.",
         intro: "(primoGiorno)",
-        content: "Il primo giorno ho configurato circa 18 PLC. Prima di tutto, ho imparato a cosa servono e, in generale, come vengono utilizzati. Questa giornata è stata una delle migliori, soprattutto perché mi hanno affidato una grande responsabilità, dato che ogni PLC costava circa 3000€.",
+        content: "Il primo giorno ho configurato circa 20 PLC. Prima di tutto, ho imparato a cosa servono e, in generale, come vengono utilizzati. Questa giornata è stata una delle migliori, soprattutto perché mi hanno affidato una grande responsabilità, dato che ogni PLC costava circa 3000€.",
         img: "/img/img1.png",
         settimana: "settimana 1",
         data: "18 / 06 / 2024",
