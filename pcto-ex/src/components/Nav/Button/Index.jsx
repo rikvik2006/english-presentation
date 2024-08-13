@@ -10,6 +10,7 @@ export default function Index({isActive, setIsActive}) {
             <motion.div 
                 className={styles.slider}
                 animate={{top: isActive ? "-100%" : "0"}}
+                transition={{duration: 0.5, ease: [0.75, 0, 0.24, 1]}}
             >
                 <div className={styles.el}>
                     <p>Menu</p>
@@ -19,7 +20,7 @@ export default function Index({isActive, setIsActive}) {
                     <p>Close</p>
                 </div>
             </motion.div>
-            
+
         </div>
   )
 }
