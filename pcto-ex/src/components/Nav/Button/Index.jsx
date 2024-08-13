@@ -13,14 +13,23 @@ export default function Index({isActive, setIsActive}) {
                 transition={{duration: 0.5, ease: [0.75, 0, 0.24, 1]}}
             >
                 <div className={styles.el}>
-                    <p>Menu</p>
+                    <ProspectiveText label="menu"/>
                 </div>
 
                 <div className={styles.el}>
-                    <p>Close</p>
+                    <ProspectiveText label="close"/>
                 </div>
             </motion.div>
 
         </div>
   )
+}
+
+function ProspectiveText({label}) {
+    return (
+        <div className={styles.prospectiveText}>
+            <p>{label}</p>
+            <p>{label}</p>
+        </div>
+    )
 }
