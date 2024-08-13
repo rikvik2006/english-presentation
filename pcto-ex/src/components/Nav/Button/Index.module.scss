@@ -3,7 +3,9 @@
     width: 3.8vw;
     border-radius: 1vw;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     overflow: hidden;
     
     .slider {

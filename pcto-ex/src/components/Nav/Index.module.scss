@@ -1,4 +1,12 @@
 .header {
     position: fixed;
     right: 3.5vw;
+    z-index: 1;
+
+    .menu {
+        width: 16vw;
+        height: 23vw;
+        background-color: var(--secondary-yellow);
+        border-radius: 0.8vw;
+    }
 }
