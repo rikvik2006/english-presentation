@@ -7,12 +7,18 @@ import { motion } from "framer-motion"
 const variants = {
   open: {
     width: "16vw",
-    height: "23vw"
+    height: "23vw",
+    top: "-0.5vw",
+    right: "-0.5vw",
+    transition: {duration: 0.8, ease: [0.75, 0, 0.24, 1]}
   },
-
+  
   closed: {
     width: "3.8vw",
-    height: "1.4vw"
+    height: "1.4vw",
+    top: "0",
+    right: "0",
+    transition: {duration: 0.8, ease: [0.75, 0, 0.24, 1]}
   }
 }
 
