@@ -1,0 +1,21 @@
+.contentWraper {
+    font-family: "Montserrat", sans-serif;
+    height: calc(100vh - 2.3vw);
+    
+    
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+        
+        .title {
+            color: var( --primary-white);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 4.8vw;
+            width: 100%;
+            text-align: center;
+        }
+    } 
+}

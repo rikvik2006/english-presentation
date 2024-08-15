@@ -1,7 +1,7 @@
 'use client'
 import styles from './Index.module.scss'
 import { links } from '../../../utils/data.js'
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const prespective = {
     initial: {
