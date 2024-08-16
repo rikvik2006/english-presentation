@@ -1,7 +1,7 @@
 'use client'
 import styles from './Index.module.scss'
-import { links } from '../../../utils/data.js'
 import { motion } from "framer-motion"
+import { links } from "../../../utils/data"
 
 const prespective = {
     initial: {
@@ -39,7 +39,9 @@ export default function Index() {
                                     exit="exit"
                                     initial="initial"
                                 >
-                                    <a href={link.href}>{link.title}</a>
+
+                                    <FlipLink href={link.href}>{link.title}</FlipLink>
+
                                 </motion.div> 
                         )
                     })
@@ -48,3 +50,72 @@ export default function Index() {
         </div>
     )
 }
+
+
+const DURATION = 0.25;
+const STAGGER = 0.025;
+
+const FlipLink = ({ children, href }) => {
+  return (
+    <motion.a
+      initial="initial"
+      whileHover="hovered"
+      href={href}
+
+      className={styles.prova1}
+
+      style={{
+        lineHeight: 0.75,
+      }}
+    >
+        <div>
+            {children.split("").map((l, i) => (
+            <motion.span
+                variants={{
+                initial: {
+                    y: 0,
+                },
+                hovered: {
+                    y: "-100%",
+                },
+                }}
+                transition={{
+                duration: DURATION,
+                ease: "easeInOut",
+                delay: STAGGER * i,
+                }}
+
+                className={styles.prova2}
+                
+                key={i}
+            >
+                {l}
+            </motion.span>
+            ))}
+        </div>
+        <div className={styles.prova3}>
+            {children.split("").map((l, i) => (
+            <motion.span
+                variants={{
+                initial: {
+                    y: "100%",
+                },
+                hovered: {
+                    y: 0,
+                },
+                }}
+                transition={{
+                duration: DURATION,
+                ease: "easeInOut",
+                delay: STAGGER * i,
+                }}
+                className={styles.prova4}
+                key={i}
+            >
+                {l}
+            </motion.span>
+            ))}
+        </div>
+    </motion.a>
+  );
+};

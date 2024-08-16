@@ -4,11 +4,15 @@ export const links = [
         href: "/"
     },
     {
+        title: "PROVA",
+        href: "/slidePrev/disfatta"
+    },
+    {
         title: "CONO. & CONS.",
-        href: "/"
+        href: "/conoscenzaPrev/lavoro"
     },
     {
         title: "CONCLUSIONI",
-        href: "/"
+        href: "/conclusion"
     }
 ]
