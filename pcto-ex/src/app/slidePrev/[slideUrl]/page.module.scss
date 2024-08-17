@@ -61,15 +61,23 @@
 
     .nextLink {
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 2vw;
         right: 0;
         bottom: 25%;
         height: 50vh; 
-        width: 10vw;
+        width: 5vw;
         background-color: var(--primary-black);
     }
     
     .linkPrev {
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 2vw;
         left: 0;
         bottom: 25%;
         height: 50vh; 

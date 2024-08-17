@@ -3,6 +3,9 @@ import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import slideData  from '../../../utils/slidesData'
 import Link from 'next/link'
+import { IoIosArrowForward } from "react-icons/io"
+import { IconContext } from "react-icons";
+import { IoIosArrowBack } from "react-icons/io";
 
 export default function Page({ params }) {
     const [ slideUrl, setSlideUrl] = useState(null)
@@ -43,11 +46,19 @@ export default function Page({ params }) {
             </div>
 
             <Link href={`${slideUrl?.linkNext}`}>
-                <div className={styles.nextLink}></div>
+                <IconContext.Provider value={{ color: "white", size: "2vw" }}>
+                    <div className={styles.nextLink}> 
+                        <IoIosArrowForward/> 
+                    </div>
+                </IconContext.Provider>;
             </Link>
 
             <Link href={`${slideUrl?.linkPrev}`}>
-                <div className={styles.linkPrev}></div>
+                <IconContext.Provider value={{ color: "white", size: "2vw" }}>
+                    <div className={styles.linkPrev}> 
+                        <IoIosArrowBack/> 
+                    </div>
+                </IconContext.Provider>;
             </Link>
             
             <div className={styles.footer}>
