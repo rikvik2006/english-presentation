@@ -4,7 +4,7 @@ export const links = [
         href: "/"
     },
     {
-        title: "PROVA",
+        title: "PERCORSO",
         href: "/slidePrev/disfatta"
     },
     {
