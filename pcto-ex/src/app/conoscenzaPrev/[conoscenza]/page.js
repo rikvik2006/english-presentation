@@ -40,7 +40,7 @@ export default function Page({ params }) {
                     <div className={styles.nextLink}> 
                         <IoIosArrowForward/> 
                     </div>
-                </IconContext.Provider>;
+                </IconContext.Provider>
             </Link>
 
             <Link href={`${conoscenza?.linkPrev}`}>
@@ -48,7 +48,7 @@ export default function Page({ params }) {
                     <div className={styles.linkPrev}> 
                         <IoIosArrowBack/> 
                     </div>
-                </IconContext.Provider>;
+                </IconContext.Provider>
             </Link>
         </div>
     )
