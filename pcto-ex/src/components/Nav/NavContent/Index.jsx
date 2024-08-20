@@ -2,6 +2,7 @@
 import styles from './Index.module.scss'
 import { motion } from "framer-motion"
 import { links } from "../../../utils/data"
+import { TransitionLink } from "../../../utils/TransitionLink"
 
 const prespective = {
     initial: {
@@ -39,8 +40,9 @@ export default function Index() {
                                     exit="exit"
                                     initial="initial"
                                 >
-
-                                    <FlipLink href={link.href}>{link.title}</FlipLink>
+                                    <TransitionLink href={link.href}>
+                                        <FlipLink>{link.title}</FlipLink>
+                                    </TransitionLink>
 
                                 </motion.div> 
                         )
@@ -55,12 +57,11 @@ export default function Index() {
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const FlipLink = ({ children, href }) => {
+const FlipLink = ({ children }) => {
   return (
     <motion.a
       initial="initial"
       whileHover="hovered"
-      href={href}
 
       className={styles.prova1}
 

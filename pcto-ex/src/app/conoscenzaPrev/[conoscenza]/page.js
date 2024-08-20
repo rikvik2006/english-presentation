@@ -2,7 +2,7 @@
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import { conoscenze } from '../../../utils/conoscenze.js'
-import Link from 'next/link'
+import { TransitionLink } from '../../../utils/TransitionLink'
 import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
@@ -35,21 +35,21 @@ export default function Page({ params }) {
                     </div>
             </div>
 
-            <Link href={`${conoscenza?.linkNext}`}>
+            <TransitionLink href={`${conoscenza?.linkNext}`}>
                 <IconContext.Provider value={{ color: "white", size: "2vw" }}>
                     <div className={styles.nextLink}> 
                         <IoIosArrowForward/> 
                     </div>
                 </IconContext.Provider>
-            </Link>
+            </TransitionLink>
 
-            <Link href={`${conoscenza?.linkPrev}`}>
+            <TransitionLink href={`${conoscenza?.linkPrev}`}>
                 <IconContext.Provider value={{ color: "white", size: "2vw" }}>
                     <div className={styles.linkPrev}> 
                         <IoIosArrowBack/> 
                     </div>
                 </IconContext.Provider>
-            </Link>
+            </TransitionLink>
         </div>
     )
 }

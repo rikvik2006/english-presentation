@@ -7,10 +7,24 @@
     --secondary-gray: #CDCDCD;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     text-decoration: none;  
     margin: 2.3vw 3vw 0 3vw;
     box-sizing: border-box;
     background-color: var(--primary-black);
     font-family: "Montserrat", sans-serif;
+    transition-property: opacity, transform, filter, background;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1000ms;
+}
+
+.page-transition {
+    opacity: 0;
+    background: black;
+    background-color: red;
+    z-index: 1000;
 }
