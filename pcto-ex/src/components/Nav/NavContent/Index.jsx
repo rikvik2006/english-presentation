@@ -39,6 +39,7 @@ export default function Index({ closeMenu }) {
                                     animate="enter"
                                     exit="exit"
                                     initial="initial"
+                                    
                                 >
                                     <TransitionLink href={link.href}>
                                         <FlipLink closeMenu={closeMenu}>{link.title}</FlipLink>
