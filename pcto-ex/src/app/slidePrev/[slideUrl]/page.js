@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
+import { TransitionLink } from "../../../utils/TransitionLink"
 
 export default function Page({ params }) {
     const [ slideUrl, setSlideUrl] = useState(null)
@@ -45,21 +46,21 @@ export default function Page({ params }) {
 
             </div>
 
-            <Link href={`${slideUrl?.linkNext}`}>
+            <TransitionLink href={`${slideUrl?.linkNext}`}>
                 <IconContext.Provider value={{ color: "white", size: "2vw" }}>
                     <div className={styles.nextLink}> 
-                        <IoIosArrowForward/> 
+                        <IoIosArrowForward/>
                     </div>
                 </IconContext.Provider>
-            </Link>
+            </TransitionLink>
 
-            <Link href={`${slideUrl?.linkPrev}`}>
+            <TransitionLink href={`${slideUrl?.linkPrev}`}>
                 <IconContext.Provider value={{ color: "white", size: "2vw" }}>
                     <div className={styles.linkPrev}> 
                         <IoIosArrowBack/> 
                     </div>
                 </IconContext.Provider>
-            </Link>
+            </TransitionLink>
             
             <div className={styles.footer}>
                 <div className={styles.settimana}>

@@ -17,14 +17,4 @@ body {
     box-sizing: border-box;
     background-color: var(--primary-black);
     font-family: "Montserrat", sans-serif;
-    transition-property: opacity, transform, filter, background;
-    transition-timing-function: ease-in-out;
-    transition-duration: 1000ms;
-}
-
-.page-transition {
-    opacity: 0;
-    background: black;
-    background-color: red;
-    z-index: 1000;
 }
