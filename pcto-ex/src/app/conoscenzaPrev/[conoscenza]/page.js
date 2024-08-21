@@ -9,6 +9,50 @@ import { IoIosArrowBack } from "react-icons/io";
 import { gsap } from "gsap";
 
 export default function Page({ params }) {
+
+    const initialStates = () => {
+        gsap.set("#numero", {
+            yPercent: 100,
+        })
+        
+        gsap.set("#title", {
+            yPercent: 100,
+        })
+    }
+    
+    const uiAnimations = () => {
+        const tl = gsap.timeline({
+            delay: 1,
+            
+            defaults: {
+                ease: 'power3.out',
+                duration: 1,
+                yPercent: 0,
+                y: 0
+            }
+            
+        })
+        
+        tl.to("#numero", {
+            
+        })
+        
+        .to("#title", {
+            
+        }, ".6")
+        
+        return tl
+    }
+    
+    
+    const master = gsap.timeline()
+    master
+    .add(initialStates())
+    .add(uiAnimations())
+
+
+
+
     const [ conoscenza, setConoscenza] = useState(null)
 
     useEffect(() => {
@@ -62,46 +106,3 @@ export default function Page({ params }) {
 }
 
 
-
-
-const master = gsap.timeline()
-
-
-const initialStates = () => {
-    gsap.set("#numero", {
-        yPercent: 100,
-    })
-    
-    gsap.set("#title", {
-        yPercent: 100,
-    })
-}
-
-const uiAnimations = () => {
-    const tl = gsap.timeline({
-        delay: 0.5,
-        
-        defaults: {
-            ease: 'power3.out',
-            duration: 1,
-            yPercent: 0,
-            y: 0
-        }
-
-    })
-        
-    tl.to("#numero", {
-    
-    })
-
-    .to("#title", {
-
-    }, ".6")
-
-    return tl
-}
-
-
-master
-    .add(initialStates())
-    .add(uiAnimations())

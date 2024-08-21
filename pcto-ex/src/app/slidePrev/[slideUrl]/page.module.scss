@@ -9,6 +9,7 @@
         width: calc(100vw - 6vw);
         display: flex;
         align-items: flex-start;
+        overflow: hidden;
         
         .numero {
             width: 25vw;
@@ -27,6 +28,10 @@
         transform: translate(-50%, -50%);
         color: white;
         font-size: .65vw;
+        
+        span {
+            overflow: hidden;
+        }
     }
     
     .mainContent {
@@ -41,6 +46,7 @@
             font-size: .7vw;
             font-weight: 300;
             max-width: 20vw;
+            overflow: hidden;
         }
         
         img {

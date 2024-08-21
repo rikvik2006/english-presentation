@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
 import { TransitionLink } from "../../../utils/TransitionLink"
+import { gsap } from "gsap";
 
 export default function Page({ params }) {
     const [ slideUrl, setSlideUrl] = useState(null)
@@ -24,18 +25,24 @@ export default function Page({ params }) {
     return (
         <div className={styles.pageContent}>
             <div className={styles.numeroWrapper}>
-                <div className={styles.numero}>
-                    {slideUrl?.numero}
+                <div id="numero" className={styles.numero}>
+                    <span>
+                        <span>{slideUrl?.numero}</span>
+                    </span>
                 </div>
             </div>
 
-            <div className={styles.intro}>
-                {slideUrl?.intro}
+            <div id="intro" className={styles.intro}>
+                <span>
+                    <span>{slideUrl?.intro}</span>
+                </span>
             </div>
 
             <div className={styles.mainContent}>
-                <div className={styles.text}>
-                    <p>{slideUrl?.content}</p>
+                <div id="text" className={styles.text}>
+                    <span>
+                        <span>{slideUrl?.content}</span>
+                    </span>
                 </div>
 
                 
@@ -78,3 +85,52 @@ export default function Page({ params }) {
         </div>
     );
 }
+
+
+const initialStates = () => {
+    gsap.set("#numero", {
+        yPercent: 100,
+    })
+    
+    gsap.set("#intro", {
+        yPercent: 100,
+    })
+
+    gsap.set("#text", {
+        yPercent: 100,
+    })
+}
+
+const uiAnimations = () => {
+    const tl = gsap.timeline({
+        delay: 0.5,
+        
+        defaults: {
+            ease: 'power3.out',
+            duration: 1,
+            yPercent: 0,
+            y: 0
+        }
+        
+    })
+    
+    tl.to("#numero", {
+        
+    })
+    
+    .to("#intro", {
+        
+    }, ".6")
+
+    tl.to("#text", {
+        
+    })
+    
+    return tl
+}
+
+
+const master = gsap.timeline()
+master
+.add(initialStates())
+.add(uiAnimations())
