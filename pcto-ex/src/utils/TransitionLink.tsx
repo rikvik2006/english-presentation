@@ -3,7 +3,7 @@ import Link, { LinkProps } from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 import pageTransitionStyle from "../components/PageTransition/Page.module.scss"
-import { animatePageIn, animatePageOut} from "../utils/PageAnimations"
+import { animatePage, animatePageOut} from "../utils/PageAnimations"
 
 interface TransitionLinkProps extends LinkProps {
   children: React.ReactNode;
@@ -25,19 +25,11 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     e.preventDefault();
-    // const body = document.querySelector("body");
-    // const banner = document.getElementById("banner");
 
-    // banner.classList.add(pageTransitionStyle.pageTransition);
-
-    animatePageIn();
-
-    await sleep(500);
-    router.push(href);
-    await sleep(500);
-    
-    animatePageOut();
-    // banner.classList.remove(pageTransitionStyle.pageTransition);
+    setTimeout(() => {
+      router.push(href);
+    }, 1500)
+    animatePage();
   };
 
   return (
