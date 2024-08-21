@@ -25,7 +25,7 @@ const prespective = {
     }
 }
 
-export default function Index() {
+export default function Index({ closeMenu }) {
     return (
         <div className={styles.nav}>
             <div className={styles.body}>
@@ -41,7 +41,7 @@ export default function Index() {
                                     initial="initial"
                                 >
                                     <TransitionLink href={link.href}>
-                                        <FlipLink>{link.title}</FlipLink>
+                                        <FlipLink closeMenu={closeMenu}>{link.title}</FlipLink>
                                     </TransitionLink>
 
                                 </motion.div> 
@@ -57,7 +57,13 @@ export default function Index() {
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const FlipLink = ({ children }) => {
+const FlipLink = ({ children, closeMenu }) => {
+  const closeMenuWithDelay = () => {
+    setTimeout(() => {
+        closeMenu();
+    }, 880);
+  }
+    
   return (
     <motion.a
       initial="initial"
@@ -68,6 +74,8 @@ const FlipLink = ({ children }) => {
       style={{
         lineHeight: 0.75,
       }}
+
+      onClick={closeMenuWithDelay}
     >
         <div>
             {children.split("").map((l, i) => (

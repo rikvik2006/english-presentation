@@ -2,8 +2,7 @@
 import Link, { LinkProps } from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
-import pageTransitionStyle from "../components/PageTransition/Page.module.scss"
-import { animatePage, animatePageOut} from "../utils/PageAnimations"
+import { animatePage } from "../utils/PageAnimations"
 
 interface TransitionLinkProps extends LinkProps {
   children: React.ReactNode;

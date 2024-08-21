@@ -2,7 +2,6 @@
 import styles from './page.module.scss'
 import { useEffect, useState } from 'react'
 import slideData  from '../../../utils/slidesData'
-import Link from 'next/link'
 import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";

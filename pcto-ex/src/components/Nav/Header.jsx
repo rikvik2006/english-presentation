@@ -27,6 +27,10 @@ export default function Home() {
 
   const [isActive, setIsActive] = useState(false)
 
+  const closeMenu = () => {
+    setIsActive(false);
+  } 
+  
   return (
     <div className={styles.header}>
         <motion.div 
@@ -36,7 +40,7 @@ export default function Home() {
           initial={"closed"}
         >
           <AnimatePresence>
-            {isActive && <Nav/>}  
+            {isActive && <Nav closeMenu={closeMenu}/>}  
           </AnimatePresence>
         </motion.div>
         <Buttom isActive={isActive} setIsActive={setIsActive}/>
