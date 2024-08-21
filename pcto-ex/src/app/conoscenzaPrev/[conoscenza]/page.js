@@ -6,6 +6,7 @@ import { TransitionLink } from '../../../utils/TransitionLink'
 import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
+import { gsap } from "gsap";
 
 export default function Page({ params }) {
     const [ conoscenza, setConoscenza] = useState(null)
@@ -24,15 +25,20 @@ export default function Page({ params }) {
     return (
         <div className={styles.contentWraper}>
             <div className={styles.prova}>
-                <div className={styles.numero}>
-                    {conoscenza?.numero}
+                <div id="numero" className={styles.numero}>
+                    <span>
+                        <span>{conoscenza?.numero}</span>
+                    </span>
                 </div>
             </div>
 
             <div className={styles.content}>
-                    <div className={styles.title}> 
-                        {conoscenza?.titolo}
-                    </div>
+                <div id="title" className={styles.title}> 
+                    <span>
+                        <span>{conoscenza?.titolo}</span>
+                    </span>
+                </div>
+
             </div>
 
             <TransitionLink href={`${conoscenza?.linkNext}`}>
@@ -52,4 +58,50 @@ export default function Page({ params }) {
             </TransitionLink>
         </div>
     )
+
 }
+
+
+
+
+const master = gsap.timeline()
+
+
+const initialStates = () => {
+    gsap.set("#numero", {
+        yPercent: 100,
+    })
+    
+    gsap.set("#title", {
+        yPercent: 100,
+    })
+}
+
+const uiAnimations = () => {
+    const tl = gsap.timeline({
+        delay: 0.5,
+        
+        defaults: {
+            ease: 'power3.out',
+            duration: 1,
+            yPercent: 0,
+            y: 0
+        }
+
+    })
+        
+    tl.to("#numero", {
+    
+    })
+
+    .to("#title", {
+
+    }, ".6")
+
+    return tl
+}
+
+
+master
+    .add(initialStates())
+    .add(uiAnimations())
