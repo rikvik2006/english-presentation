@@ -31,7 +31,7 @@ export default function Page({ params }) {
     
     const uiAnimations = () => {
         const tl = gsap.timeline({
-            delay: 0.5,
+            delay: 0.7,
             
             defaults: {
                 ease: 'power3.out',
@@ -46,15 +46,16 @@ export default function Page({ params }) {
         })
         
         .to("#intro", {
-        },)
+        }, ".1")
     
-        tl.to("#text", {
+        .to("#text", {
         })
 
-        tl.to("#img", {  
-        })
+        .to("#img", {
+            ease: "power3.inOut"  
+        }, ".85")
 
-        tl.to("#footer", { 
+        .to("#footer", { 
         })
 
         
