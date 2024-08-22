@@ -82,7 +82,6 @@ export default function Page({ params }) {
                         <span>{conoscenza?.titolo}</span>
                     </span>
                 </div>
-
             </div>
 
             <TransitionLink href={`${conoscenza?.linkNext}`}>
