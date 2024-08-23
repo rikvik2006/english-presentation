@@ -7,66 +7,105 @@ import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
 import { TransitionLink } from "../../../utils/TransitionLink"
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
 
 export default function Page({ params }) {
-    const initialStates = () => {
-        gsap.set("#numero", {
-            yPercent: 100,
-        })
-        
-        gsap.set("#intro", {
-            yPercent: 100,
-        })
     
-        gsap.set("#text", {
-            yPercent: 100,
-        })
-        gsap.set("#img", {
-            yPercent: 100,
-        })
-        gsap.set("#footer", {
-            yPercent: 100,
-        })
-    }
-    
-    const uiAnimations = () => {
-        const tl = gsap.timeline({
-            delay: 0.7,
+    gsap.registerPlugin(useGSAP);
+
+    useGSAP(
+        () => {
+            const initialStates = () => {
+                gsap.set("#numero", {
+                    yPercent: 100,
+                })
+                
+                gsap.set("#intro", {
+                    yPercent: 100,
+                })
             
-            defaults: {
-                ease: 'power3.out',
-                duration: 1,
-                yPercent: 0,
-                y: 0
+                gsap.set("#text", {
+                    yPercent: 100,
+                })
+        
+                gsap.set("#img", {
+                    yPercent: 100,
+                })
+        
+                gsap.set("#footer", {
+                    yPercent: 100,
+                })
             }
             
-        })
+            const uiAnimationsTop = () => {
+                const tl = gsap.timeline({
+                    delay: 0.7,
+                    
+                    defaults: {
+                        ease: 'power3.out',
+                        duration: 1,
+                        yPercent: 0,
+                        y: 0
+                    }
+                    
+                })
+                
+                tl.to("#numero", {
+                })
+                
+                .to("#intro", {
+                }, "")
+            
+                return tl
+            }
+            
+            const uiAnimationsMiddle = () => {
+                const tl = gsap.timeline({
+                    defaults: {
+                        ease: 'power3.out',
+                        duration: 1,
+                        yPercent: 0,
+                        y: 0
+                    }
+                    
+                })
+                
+                tl.to("#text", {
+                })
         
-        tl.to("#numero", {
-        })
+                .to("#img", { 
+                }, "")
         
-        .to("#intro", {
-        }, ".1")
-    
-        .to("#text", {
-        })
-
-        .to("#img", {
-            ease: "power3.inOut"  
-        }, ".85")
-
-        .to("#footer", { 
-        })
-
+                return tl
+            }
         
-        return tl
-    }
-    
-    
-    const master = gsap.timeline()
-    master
-    .add(initialStates())
-    .add(uiAnimations())
+            const uiAnimationsBottom = () => {
+                const tl = gsap.timeline({
+                    defaults: {
+                        ease: 'power3.out',
+                        duration: 1,
+                        yPercent: 0,
+                        y: 0
+                    }
+                    
+                })
+        
+                tl.to("#footer", { 
+                })
+        
+                return tl
+            }
+            
+            const master = gsap.timeline()
+            master
+            .add(initialStates())
+            .add(uiAnimationsTop())
+            .add(uiAnimationsMiddle())
+            .add(uiAnimationsBottom())
+            
+        });
 
     
     const [ slideUrl, setSlideUrl] = useState(null)

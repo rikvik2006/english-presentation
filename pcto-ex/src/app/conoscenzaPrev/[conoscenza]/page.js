@@ -7,50 +7,54 @@ import { IoIosArrowForward } from "react-icons/io"
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Page({ params }) {
 
-    const initialStates = () => {
-        gsap.set("#numero", {
-            yPercent: 100,
-        })
-        
-        gsap.set("#title", {
-            yPercent: 100,
-        })
-    }
-    
-    const uiAnimations = () => {
-        const tl = gsap.timeline({
-            delay: 1,
-            
-            defaults: {
-                ease: 'power3.out',
-                duration: 1,
-                yPercent: 0,
-                y: 0
+    gsap.registerPlugin(useGSAP);
+
+    useGSAP(
+        () => {
+            const initialStates = () => {
+                gsap.set("#numero", {
+                    yPercent: 100,
+                })
+                
+                gsap.set("#title", {
+                    yPercent: 100,
+                })
             }
             
-        })
-        
-        tl.to("#numero", {
+            const uiAnimations = () => {
+                const tl = gsap.timeline({
+                    delay: 1,
+                    
+                    defaults: {
+                        ease: 'power3.out',
+                        duration: 1,
+                        yPercent: 0,
+                        y: 0
+                    }
+                    
+                })
+                
+                tl.to("#numero", {
+                    
+                })
+                
+                .to("#title", {
+                    
+                }, ".6")
+                
+                return tl
+            }
             
-        })
-        
-        .to("#title", {
             
-        }, ".6")
-        
-        return tl
-    }
-    
-    
-    const master = gsap.timeline()
-    master
-    .add(initialStates())
-    .add(uiAnimations())
-
-
+            const master = gsap.timeline()
+            master
+            .add(initialStates())
+            .add(uiAnimations())
+        });
 
 
     const [ conoscenza, setConoscenza] = useState(null)
