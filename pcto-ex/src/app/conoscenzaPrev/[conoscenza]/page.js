@@ -52,8 +52,8 @@ export default function Page({ params }) {
             
             const master = gsap.timeline()
             master
-            .add(initialStates())
-            .add(uiAnimations())
+                .add(initialStates())
+                .add(uiAnimations())
         });
 
 

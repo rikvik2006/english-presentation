@@ -106,7 +106,6 @@ export default function Page({ params }) {
             .add(uiAnimationsBottom())
             
         });
-
     
     const [ slideUrl, setSlideUrl] = useState(null)
 
@@ -119,7 +118,6 @@ export default function Page({ params }) {
             } 
         }
     }, [])
-
 
     return (
         <div className={styles.pageContent}>

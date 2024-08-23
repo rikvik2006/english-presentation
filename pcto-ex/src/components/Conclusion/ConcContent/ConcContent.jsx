@@ -1,49 +1,52 @@
 import styles from './ConcContent.module.scss'
-import gsap from 'gsap'
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const ConcContent = () => {
 
-    const initialStates = () => {
-        gsap.set("#navContent", {
-            yPercent: 100,
-        })
-        
-        gsap.set("#content", {
-            yPercent: 100,
-        })
-    }
-    
-    const uiAnimations = () => {
-        const tl = gsap.timeline({
-            delay: 1,
-            
-            defaults: {
-                ease: 'power3.out',
-                duration: 1,
-                yPercent: 0,
-                y: 0
-            }
-            
-        })
-        
-        tl.to("#navContent", {
-            
-        })
-        
-        .to("#content", {
-            
-        }, ".6")
-        
-        return tl
-    }
-    
-    
-    const master = gsap.timeline()
-    master
-    .add(initialStates())
-    .add(uiAnimations())
+    gsap.registerPlugin(useGSAP)
 
-
+    useGSAP(() => {
+        const initialStates = () => {
+            gsap.set("#navContent", {
+                yPercent: 100,
+            })
+            
+            gsap.set("#content", {
+                yPercent: 100,
+            })
+        }
+        
+        const uiAnimations = () => {
+            const tl = gsap.timeline({
+                delay: .7,
+                
+                defaults: {
+                    ease: 'power3.out',
+                    duration: 1,
+                    yPercent: 0,
+                    y: 0
+                }
+                
+            })
+            
+            tl.to("#navContent", {
+                
+            })
+            
+            .to("#content", {
+                
+            }, ".6")
+            
+            return tl
+        }
+        
+        
+        const master = gsap.timeline()
+        master
+            .add(initialStates())
+            .add(uiAnimations())
+        }, []);
 
     return(
         <div className={styles.contentWrapper}>
