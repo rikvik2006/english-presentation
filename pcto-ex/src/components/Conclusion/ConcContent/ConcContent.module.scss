@@ -4,6 +4,9 @@
 
     .navContent {
         display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: hidden;
     
         .title{
             color: var( --primary-white);
@@ -19,6 +22,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        overflow: hidden;
     
     
         .text {
