@@ -1,3 +1,4 @@
+'use client'
 import styles from './ConcContent.module.scss'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -46,18 +47,18 @@ const ConcContent = () => {
         master
             .add(initialStates())
             .add(uiAnimations())
-        }, []);
+    }, []);
 
     return(
         <div className={styles.contentWrapper}>
-            <div id="navContent" className={styles.navContent}>
-                <div className={styles.title}>
+            <div className={styles.navContent}>
+                <div id="navContent" className={styles.title}>
                     conclusioni
                 </div>
             </div>
 
-            <div id="content"  className={styles.content}>
-                <div className={styles.text}>
+            <div className={styles.content}>
+                <div id="content" className={styles.text}>
                     Sono contento di questa esperienza. Anche se ho fatto solo lavori di base, 
                     erano comunque lavori veri e non semplici progettini che poi nessuno considera. 
                     L&apos;ambiente era fantastico: tutti scherzavano ed erano gentili, ma lavoravano anche duramente, 
