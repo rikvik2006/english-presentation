@@ -1,114 +1,121 @@
 .pageContent {
-    height: calc(100vh - 2.3vw);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+	height: calc(100vh - 2.3vw);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 
-    .numeroWrapper {
-        width: calc(100vw - 6vw);
-        display: flex;
-        align-items: flex-start;
-        overflow: hidden;
-        
-        .numero {
-            width: 25vw;
-            line-height: 7vw;
-            color: var( --primary-white);
-            text-transform: uppercase;
-            font-weight: 800;
-            font-size: 8vw;
-        }
-    }
-    
-    .introWrapper {
-        overflow: hidden;
-        position: absolute;
-        top: 4vw;
-        left: 50%;
-        transform: translate(-50%, -50%);
+	.numeroWrapper {
+		width: calc(100vw - 6vw);
+		display: flex;
+		align-items: flex-start;
+		overflow: hidden;
 
-        .intro {
-            color: white;
-            font-size: .65vw;
-        }
-    }
-    
-    .mainContent {
-        max-width: 50vw;
-        gap: 10vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        
-        
-        .textWrapper {
-            overflow: hidden;
+		.numero {
+			width: 25vw;
+			line-height: 7vw;
+			color: var(--primary-white);
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: 8vw;
+		}
+	}
 
-            .text {
-                color: white;
-                font-size: .8vw;
-                font-weight: 300;
-                max-width: 20vw;
-            }
-        }
-        
-        img {
-            height: 20vw;
-            width: 12vw;
-            filter: brightness(70%);
-        }
-    }
-    
-    .footerWrapper {
-        overflow: hidden;
-        width: calc(100vw - 6vw);
-        
-        .footer {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            font-size: .7vw;
-            color: white;
-        }
-    }
+	.introWrapper {
+		overflow: hidden;
+		position: absolute;
+		top: 4vw;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
-    .nextLink {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 2vw;
-        right: 0;
-        bottom: 25%;
-        height: 50vh; 
-        width: 5vw;
-        background-color: var(--primary-black);
-        opacity: 0;
-    }
+		.intro {
+			color: white;
+			font-size: 0.65vw;
+		}
+	}
 
-    .nextLink:hover {
-        opacity: 1;
-        transition: 1s;
-    }
-    
-    .linkPrev {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 2vw;
-        left: 0;
-        bottom: 25%;
-        height: 50vh; 
-        width: 10vw;
-        background-color: var(--primary-black);
-        opacity: 0;
-    }
-    
-    .linkPrev:hover {
-        opacity: 1;
-        transition: 1s;
-    }
+	.mainContent {
+		max-width: 50vw;
+		gap: 10vw;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		overflow: hidden;
+
+		.textWrapper {
+			overflow: hidden;
+
+			.text {
+				color: white;
+				font-size: 0.8vw;
+				font-weight: 300;
+				max-width: 20vw;
+			}
+		}
+
+		img {
+			height: 20vw;
+			width: 12vw;
+			filter: brightness(70%);
+		}
+	}
+
+	.footerWrapper {
+		overflow: hidden;
+		width: calc(100vw - 6vw);
+
+		.footer {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			font-size: 0.7vw;
+			color: white;
+		}
+	}
+
+	.nextLink {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 2vw;
+		right: 0;
+		bottom: 25%;
+		height: 50vh;
+		width: 5vw;
+		background-color: var(--primary-black);
+		opacity: 0;
+	}
+
+	.nextLink:hover {
+		opacity: 1;
+		transition: 1s;
+	}
+
+	.linkPrev {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 2vw;
+		left: 0;
+		bottom: 25%;
+		height: 50vh;
+		width: 10vw;
+		background-color: var(--primary-black);
+		opacity: 0;
+	}
+
+	.linkPrev:hover {
+		opacity: 1;
+		transition: 1s;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.text {
+		font-size: 2vw;
+		color: red;
+		background-color: red;
+	}
 }
