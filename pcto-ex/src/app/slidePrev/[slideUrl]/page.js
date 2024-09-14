@@ -47,8 +47,7 @@ export default function Page({ params }) {
 				},
 			});
 
-			tl.to("#numero", {})
-			.to("#intro", {}, "");
+			tl.to("#numero", {}).to("#intro", {}, "");
 
 			return tl;
 		};
@@ -63,8 +62,7 @@ export default function Page({ params }) {
 				},
 			});
 
-			tl.to("#text", {})
-			.to("#img", {}, "");
+			tl.to("#text", {}).to("#img", {}, "");
 
 			return tl;
 		};
@@ -122,22 +120,24 @@ export default function Page({ params }) {
 				</div>
 			</div>
 
-			<div className={styles.mainContent}>
-				<div className={styles.textWrapper}>
-					<div id="text" className={styles.text}>
+			<div className={styles.mainContentWrapper}>
+				<div className={styles.mainContent}>
+					<div className={styles.textWrapper}>
+						<div id="text" className={styles.text}>
+							<span>
+								<span>{slideUrl?.content}</span>
+							</span>
+						</div>
+					</div>
+
+					<div id="img" className={styles.img}>
 						<span>
-							<span>{slideUrl?.content}</span>
+							<span>
+								{" "}
+								<img src={`${slideUrl?.img}`} alt="boboz" />
+							</span>
 						</span>
 					</div>
-				</div>
-
-				<div id="img" className={styles.img}>
-					<span>
-						<span>
-							{" "}
-							<img src={`${slideUrl?.img}`} alt="boboz" />
-						</span>
-					</span>
 				</div>
 			</div>
 
