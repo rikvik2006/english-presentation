@@ -30,7 +30,7 @@
 
 		.intro {
 			color: white;
-			font-size: 0.65vw;
+			font-size: clamp(0.85rem, 0.65vw, 2rem);
 		}
 	}
 
@@ -47,15 +47,15 @@
 
 			.text {
 				color: white;
-				font-size: 0.9vw;
+				font-size: clamp(1rem, 0.8vw, 2rem);
 				font-weight: 300;
 				max-width: 25vw;
 			}
 		}
 
 		img {
-			height: 20vw;
-			width: 12vw;
+			height: clamp(21rem, 20vw, 42rem);
+			width: clamp(13rem, 12vw, 26rem);
 			filter: brightness(70%);
 		}
 	}
@@ -68,7 +68,7 @@
 			display: flex;
 			align-items: flex-end;
 			justify-content: space-between;
-			font-size: 0.7vw;
+			font-size: clamp(0.85rem, 0.65vw, 2rem);
 			color: white;
 		}
 	}
