@@ -1,37 +1,36 @@
 .contentWrapper {
-    height: 100vh;
-    font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
 
-    .navContent {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: auto;
-        overflow: hidden;
-    
-        .title{
-            color: var( --primary-white);
-            text-transform: uppercase;
-            font-weight: 800;
-            font-size: 8.5vw;
-            line-height: 6.5vw;
-        }
-    } 
-    
-    .content {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-    
-    
-        .text {
-            max-width: 33vw;
-            font-size: 1vw;
-            color: var(--primary-white);
-            text-align: center;
-            font-weight: 400;
-        }
-    }
+	.navContent {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		height: auto;
+		overflow: hidden;
+
+		.title {
+			color: var(--primary-white);
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: 8.5vw;
+			line-height: 6.5vw;
+		}
+	}
+
+	.content {
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+
+		.text {
+			max-width: 38vw;
+			font-size: 1.2vw;
+			color: var(--primary-white);
+			text-align: center;
+			font-weight: 400;
+		}
+	}
 }

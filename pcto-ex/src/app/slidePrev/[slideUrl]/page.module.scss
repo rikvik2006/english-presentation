@@ -47,9 +47,9 @@
 
 			.text {
 				color: white;
-				font-size: 0.8vw;
+				font-size: 0.9vw;
 				font-weight: 300;
-				max-width: 20vw;
+				max-width: 25vw;
 			}
 		}
 
@@ -109,13 +109,5 @@
 	.linkPrev:hover {
 		opacity: 1;
 		transition: 1s;
-	}
-}
-
-@media screen and (max-width: 1400px) {
-	.text {
-		font-size: 2vw;
-		color: red;
-		background-color: red;
 	}
 }
