@@ -27,7 +27,7 @@
 
 		.text {
 			max-width: 38vw;
-			font-size: 1.2vw;
+			font-size: clamp(1rem, 0.8vw, 2rem);
 			color: var(--primary-white);
 			text-align: center;
 			font-weight: 400;
