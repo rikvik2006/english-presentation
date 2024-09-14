@@ -39,9 +39,9 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		width: clamp(52rem, 52.5vw, 115rem);
 
 		.mainContent {
-			max-width: 50vw;
 			gap: 10vw;
 			display: flex;
 			align-items: center;
@@ -55,7 +55,6 @@
 					color: white;
 					font-size: clamp(1rem, 0.8vw, 2rem);
 					font-weight: 300;
-					max-width: 25vw;
 				}
 			}
 
