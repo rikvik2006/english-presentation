@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --primary-white: #ffffff;
     --primary-black: #131313;
     --secondary-yellow: #afd129;
-    --secondary-gray: #CDCDCD;
+    --secondary-gray: #cdcdcd;
 }
 
 ::-webkit-scrollbar {
@@ -12,9 +12,13 @@
 }
 
 body {
-    text-decoration: none;  
+    text-decoration: none;
     margin: 2.3vw 3vw 0 3vw;
     box-sizing: border-box;
     background-color: var(--primary-black);
     font-family: "Montserrat", sans-serif;
+}
+
+.highlight {
+    color: var(--secondary-yellow);
 }

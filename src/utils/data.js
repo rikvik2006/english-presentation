@@ -1,18 +1,26 @@
 export const links = [
     {
-        title: "INTRO",
-        href: "/"
+        title: "INTRODUCTION",
+        href: "/",
     },
     {
-        title: "PERCORSO",
-        href: "/slidePrev/disfatta"
+        title: "STAGE1 - ANALYSIS",
+        href: "/stage1/programming",
     },
     {
-        title: "CONO. & CONS.",
-        href: "/conoscenzaPrev/lavoro"
+        title: "STAGE2 - PROGRAMMING",
+        href: "/stage2/...",
     },
+    {
+        title: "STAGE3 - MAINTENANCE",
+        href: "/stage3/...",
+    },
+    // {
+    //     title: "PAGINA DA TOGLIERE",
+    //     href: "/conoscenzaPrev/lavoro",
+    // },
     {
         title: "CONCLUSIONI",
-        href: "/conclusion"
-    }
-]
+        href: "/conclusion",
+    },
+];

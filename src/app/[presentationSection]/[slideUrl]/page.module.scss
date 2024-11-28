@@ -1,0 +1,120 @@
+.pageContent {
+    height: calc(100vh - 2.3vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .numeroWrapper {
+        width: calc(100vw - 6vw);
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+
+        .numero {
+            width: 25vw;
+            line-height: 7vw;
+            color: var(--primary-white);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 8vw;
+        }
+    }
+
+    .introWrapper {
+        overflow: hidden;
+        position: absolute;
+        top: 4vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .intro {
+            color: white;
+            font-size: clamp(0.85rem, 0.65vw, 2rem);
+        }
+    }
+
+    .mainContentWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: clamp(52rem, 52.5vw, 115rem);
+
+        .mainContent {
+            gap: 10vw;
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+
+            .textWrapper {
+                overflow: hidden;
+
+                .text {
+                    color: white;
+                    font-size: clamp(1rem, 0.8vw, 2rem);
+                    font-weight: 300;
+                }
+            }
+
+            img {
+                height: clamp(21rem, 20vw, 42rem);
+                width: clamp(13rem, 12vw, 26rem);
+                filter: brightness(70%);
+                object-fit: cover;
+            }
+        }
+    }
+
+    .footerWrapper {
+        overflow: hidden;
+        width: calc(100vw - 6vw);
+
+        .footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            font-size: clamp(0.85rem, 0.65vw, 2rem);
+            color: white;
+        }
+    }
+
+    .nextLink {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 2vw;
+        right: 0;
+        bottom: 25%;
+        height: 50vh;
+        width: 5vw;
+        background-color: var(--primary-black);
+        opacity: 0;
+    }
+
+    .nextLink:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    .linkPrev {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 2vw;
+        left: 0;
+        bottom: 25%;
+        height: 50vh;
+        width: 10vw;
+        background-color: var(--primary-black);
+        opacity: 0;
+    }
+
+    .linkPrev:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+}
