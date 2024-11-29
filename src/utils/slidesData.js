@@ -179,7 +179,7 @@ export const slideDataStage3 = [
     {
         id: "debugging",
         numero: "02.",
-        intro: "(degugging)",
+        intro: "(debugging)",
         content:
             "Debugging is the process of identifying and fixing errors in software code. It involves tracing the source of errors, understanding the problem, and implementing a solution. Debugging tools and techniques, such as print statements, breakpoints, and code analysis tools, help developers diagnose and resolve issues efficiently.",
         img: "/img/debugging.png",
