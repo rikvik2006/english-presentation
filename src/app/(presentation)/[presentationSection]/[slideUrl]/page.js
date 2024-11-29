@@ -2,14 +2,15 @@
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
 import {
+    slideDataWhatsProgramming,
     slideDataStage1,
     slideDataStage2,
     slideDataStage3,
-} from "../../../utils/slidesData";
+} from "../../../../utils/slidesData";
 import { IoIosArrowForward } from "react-icons/io";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack } from "react-icons/io";
-import { TransitionLink } from "../../../utils/TransitionLink";
+import { TransitionLink } from "../../../../utils/TransitionLink";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/navigation";
@@ -102,7 +103,9 @@ export default function Page({ params }) {
         console.log(params);
 
         let slideData;
-        if (params.presentationSection === "stage1") {
+        if (params.presentationSection === "whatsProgramming") {
+            slideData = slideDataWhatsProgramming;
+        } else if (params.presentationSection === "stage1") {
             slideData = slideDataStage1;
         } else if (params.presentationSection === "stage2") {
             slideData = slideDataStage2;
