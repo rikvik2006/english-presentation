@@ -1,4 +1,4 @@
-export const slideDataStage1 = [
+export const slideDataWhatsProgramming = [
     {
         id: "programming",
         numero: "00.",
@@ -6,11 +6,11 @@ export const slideDataStage1 = [
         content:
             "Programming is the process of creating precise instructions for a computer to execute tasks. For a computer to perform correctly, the problem must be clearly defined, and detailed step-by-step instructions must be provided.",
         img: "/img/programming.jpg",
-        settimana: "stage 1",
-        data: "17 / 06 / 2024",
-        topic: "none",
-        linkNext: "/slidePrev/stages_of_programming",
-        linkPrev: "/slidePrev/flowcharts_and_pseudocode",
+        settimana: "",
+        data: "introduction",
+        topic: "",
+        linkNext: "/whatsProgramming/stages_of_programming",
+        linkPrev: "/whatsProgramming/whats_an_algorithm",
     },
     {
         id: "stages_of_programming",
@@ -19,11 +19,11 @@ export const slideDataStage1 = [
         content:
             "The stages of programming involve understanding and mapping the problem by creating an algorithm or pseudocode, writing the program using a programming language, and testing the program while creating documentation.",
         img: "/img/stage_of_programming.jpg",
-        settimana: "stage 1",
-        data: "18 / 06 / 2024",
-        topic: "configurazione plc",
-        linkNext: "/slidePrev/understanding_the_problem",
-        linkPrev: "/slidePrev/programming",
+        settimana: "",
+        data: "introduction",
+        topic: "",
+        linkNext: "/whatsProgramming/understanding_the_problem",
+        linkPrev: "/whatsProgramming/programming",
     },
     {
         id: "understanding_the_problem",
@@ -32,11 +32,11 @@ export const slideDataStage1 = [
         content:
             "Understanding the problem is crucial and requires a detailed specification of inputs, processing, and outputs. The procedure to solve the problem is called an algorithm.",
         img: "/img/img2.png",
-        settimana: "stage 1",
-        data: "19-20 / 06 / 2024",
-        topic: "configurazione pc",
-        linkNext: "/slidePrev/whats_an_algorithm",
-        linkPrev: "/slidePrev/stages_of_programming",
+        settimana: "",
+        data: "introduction",
+        topic: "",
+        linkNext: "/whatsProgramming/whats_an_algorithm",
+        linkPrev: "/whatsProgramming/stages_of_programming",
     },
     {
         id: "whats_an_algorithm",
@@ -45,24 +45,11 @@ export const slideDataStage1 = [
         content:
             "A good algorithm consists of instructions that are:\n\n- Well-defined: Clearly specify the steps and their order.\n\n- Unambiguous: Leave no doubt about the actions to be taken.\n\n- Effective: Produce the desired results.\n\n- Finite: Ensure the process terminates and does not run indefinitely.",
         img: "/img/algorithms.jpg",
-        settimana: "settimana 1",
-        data: "21 / 06 / 2024",
-        topic: "configurazione pc",
-        linkNext: "/slidePrev/flowcharts_and_pseudocode",
-        linkPrev: "/slidePrev/understanding_the_problem",
-    },
-    {
-        id: "flowcharts_and_pseudocode",
-        numero: "04.",
-        intro: "(flowcharts and pseudocode)",
-        content:
-            "Flowcharts and pseudocode are tools for representing algorithms. A flowchart visually depicts the logic of an algorithm using standardized symbols, aiding in logic development and documentation. Alternatively, pseudocode provides a compact, informal high-level description of an algorithm, combining elements of programming language structure with natural language explanations.",
-        img: "/img/flowchart.svg",
-        settimana: "settimana 2",
-        data: "24 / 06 / 2024",
-        topic: "pc/saldatura",
-        linkNext: "/slidePrev/programming",
-        linkPrev: "/slidePrev/understanding_the_problem",
+        settimana: "",
+        data: "introduction",
+        topic: "",
+        linkNext: "/whatsProgramming/programming",
+        linkPrev: "/whatsProgramming/understanding_the_problem",
     },
     // {
     //     id: "ultimiGiorni",
@@ -74,10 +61,145 @@ export const slideDataStage1 = [
     //     settimana: "settimana 2",
     //     data: "25-27 / 06 / 2024",
     //     topic: "piccole task",
-    //     linkNext: "/slidePrev/disfatta",
-    //     linkPrev: "/slidePrev/miniCorso",
+    //     linkNext: "/stage1/disfatta",
+    //     linkPrev: "/stage1/miniCorso",
     // },
 ];
 
-export const slideDataStage2 = [];
-export const slideDataStage3 = [];
+export const slideDataStage1 = [
+    {
+        id: "flowcharts_and_pseudocode",
+        numero: "00.",
+        intro: "(flowcharts and pseudocode)",
+        content:
+            "Flowcharts and pseudocode are tools for representing algorithms. A flowchart visually depicts the logic of an algorithm using standardized symbols, aiding in logic development and documentation. Alternatively, pseudocode provides a compact, informal high-level description of an algorithm, combining elements of programming language structure with natural language explanations.",
+        img: "/img/flowchart.svg",
+        settimana: "",
+        data: "analysis",
+        topic: "",
+        linkNext: "/stage1/gantt_diagrams",
+        linkPrev: "/stage1/gantt_diagrams",
+    },
+    {
+        id: "gantt_diagrams",
+        numero: "01.",
+        intro: "(gantt diagrams)",
+        content:
+            "Gantt charts are a valuable tool for program analysis, providing a visual timeline of tasks and their durations. They help plan and track the progress of each step in the program development process, from initial analysis to testing and deployment. By outlining dependencies and deadlines, Gantt charts ensure better time management and coordination among team members, making the development process more organized and efficient.",
+        img: "/img/gantt.png",
+        settimana: "",
+        data: "analysis",
+        topic: "",
+        linkNext: "/stage1/flowcharts_and_pseudocode",
+        linkPrev: "/stage1/flowcharts_and_pseudocode",
+    },
+];
+
+export const slideDataStage2 = [
+    {
+        id: "choosing_a_programming_language",
+        numero: "00.",
+        intro: "(choosing a programming language)",
+        content:
+            "Choosing the right programming language is essential for developing software. Factors to consider include the project's requirements, the language's capabilities, and the developer's familiarity with the language. Popular programming languages include Python, Java, C++, and JavaScript, each with its strengths and weaknesses.",
+        img: "/img/programming_language.jpg",
+        settimana: "",
+        data: "programming",
+        topic: "",
+        linkNext: "/stage2/choosing_an_ide",
+        linkPrev: "/stage2/choose_a_cloud_platform",
+    },
+    {
+        id: "choosing_an_ide",
+        numero: "01.",
+        intro: "(choosing an IDE)",
+        content:
+            "An Integrated Development Environment (IDE) is a software application that provides comprehensive facilities for software development. IDEs typically include a source code editor, build automation tools, and a debugger. Popular IDEs include Visual Studio Code, IntelliJ IDEA, and Eclipse, each tailored to specific programming languages and development environments.",
+        img: "/img/ides.png",
+        settimana: "",
+        data: "programming",
+        topic: "",
+        linkNext: "/stage2/choose_a_version_control_system",
+        linkPrev: "/stage2/choosing_a_programming_language",
+    },
+    {
+        id: "choose_a_version_control_system",
+        numero: "02.",
+        intro: "(choose a version control system)",
+        content:
+            "Version control systems (VCS) are essential tools for managing changes to source code over time. They enable developers to track modifications, collaborate with team members, and revert to previous versions if necessary. Popular VCSs include Git, Subversion, and Mercurial, each offering unique features for code management and collaboration. Github, GitLab, and Bitbucket are popular platforms for hosting repositories and facilitating collaboration among developers.",
+        img: "/img/git.png",
+        settimana: "",
+        data: "programming",
+        topic: "",
+        linkNext: "/stage2/choose_a_cloud_platform",
+        linkPrev: "/stage2/choosing_an_ide",
+    },
+    {
+        id: "choose_a_cloud_platform",
+        numero: "03.",
+        intro: "(choose a cloud platform)",
+        content:
+            "Cloud platforms offer scalable computing resources and services over the internet, allowing developers to build, deploy, and manage applications without requiring on-premises infrastructure. Leading platforms like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform provide a wide array of services for hosting, storage, and computing, making them flexible, scalable, and cost-effective solutions for software development. Alternatively, developers can use platforms like Vercel, Netlify, or GitHub Pages to host static websites and web applications with ease. For those seeking greater control, self-hosting is an option using a VPS or dedicated server from providers such as DigitalOcean, Linode, or Vultr. In self-hosted environments, tools like Docker and Kubernetes are particularly valuable, offering containerization and orchestration capabilities that simplify application deployment and management across diverse environments, enhancing scalability and reliability.",
+        img: "/img/fang.png",
+        settimana: "",
+        data: "programming",
+        topic: "",
+        linkNext: "/stage2/choosing_a_programming_language",
+        linkPrev: "/stage2/choose_a_version_control_system",
+    },
+];
+export const slideDataStage3 = [
+    {
+        id: "testing",
+        numero: "00.",
+        intro: "(testing)",
+        content:
+            "Testing is an essential part of the software development process, ensuring that the software meets the specified requirements and functions correctly. Testing can be performed at different stages of development, including unit testing, integration testing, system testing, and acceptance testing. Each type of testing focuses on different aspects of the software, from individual components to the overall system functionality.",
+        img: "/img/jest.png",
+        settimana: "",
+        data: "matainance",
+        topic: "",
+        linkNext: "/stage3/errors",
+        linkPrev: "/stage3/documentation",
+    },
+    {
+        id: "errors",
+        numero: "01.",
+        intro: "(errors)",
+        content:
+            "Errors in software can occur due to various reasons, such as coding mistakes, logic errors, or unexpected user input. Common types of errors include syntax errors, runtime errors, and logical errors. To identify and fix errors, developers can use debugging tools and techniques, such as print statements, breakpoints, and code analysis tools.",
+        img: "/img/oldmen.webp",
+        settimana: "",
+        data: "matainance",
+        topic: "",
+        linkNext: "/stage3/debugging",
+        linkPrev: "/stage3/testing",
+    },
+    {
+        id: "debugging",
+        numero: "02.",
+        intro: "(degugging)",
+        content:
+            "Debugging is the process of identifying and fixing errors in software code. It involves tracing the source of errors, understanding the problem, and implementing a solution. Debugging tools and techniques, such as print statements, breakpoints, and code analysis tools, help developers diagnose and resolve issues efficiently.",
+        img: "/img/debugging.png",
+        settimana: "",
+        data: "matainance",
+        topic: "",
+        linkNext: "/stage3/documentation",
+        linkPrev: "/stage3/errors",
+    },
+    {
+        id: "documentation",
+        numero: "03.",
+        intro: "(documentation)",
+        content:
+            "Documentation is essential for maintaining and updating software systems. It includes technical specifications, user manuals, and system documentation, providing valuable information for developers, users, and stakeholders. Well-documented software is easier to maintain, troubleshoot, and enhance, ensuring its long-term viability and usability. Tools like Javadoc, Doxygen, and Sphinx help automate the documentation process, generating consistent and comprehensive documentation for software projects.",
+        img: "/img/docusaurus.png",
+        settimana: "",
+        data: "matainance",
+        topic: "",
+        linkNext: "/stage3/testing",
+        linkPrev: "/stage3/debugging",
+    },
+];
